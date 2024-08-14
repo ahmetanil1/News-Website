@@ -54,11 +54,11 @@ img {
 }
 
 .content-container {
-  width: 90%;
+  width: 50%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .news-card {
@@ -81,6 +81,10 @@ img {
   font-size: 15px;
 }
 
+.news-content div {
+  margin-bottom: 5px;
+}
+
 .news-title {
   font-weight: 600;
   color: #0b0028;
@@ -101,6 +105,24 @@ img {
   text-align: center;
   padding: 0.3em 0.2em;
   border-radius: 5px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+svg {
+  height: 35px;
+  width: 35px;
+  padding: 5px;
+}
+
+svg:hover {
+  transform: scale(1.2);
 }
 
 @media only screen and (max-width:768px) {

@@ -1,7 +1,7 @@
 <template>
     <div class="news-card">
         <div class="news-image-container">
-            <img :src="article.urlToImage" alt="NewsImage" />
+            <img :src="article.urlToImage " alt="NewsImage" />
         </div>
         <div class="news-content">
             <div class="news-title">
