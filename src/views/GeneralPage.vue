@@ -2,7 +2,7 @@
     <div>
         <NewsCard v-for="article in articles" :key="article.id" :article="article" />
     </div>
-</template> 
+</template>
 
 <script setup>
 import { ref, onMounted } from 'vue';
