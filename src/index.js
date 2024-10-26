@@ -8,19 +8,19 @@ const routes = [
     },
     {
         name: "EntertainmentPage",
-        path: "/entertainment",
+        path: "/bbc-news",
         component: () => import("./views/EntertainmentPage.vue")
     }, {
         name: "HealthPage",
-        path: "/health",
+        path: "/bbc-sport",
         component: () => import("./views/HealthPage.vue")
     }, {
         name: "SciencePage",
-        path: "/science",
+        path: "/australian-financial-review",
         component: () => import("./views/SciencePage.vue")
     }, {
         name: "SportsPage",
-        path: "/sports",
+        path: "/buzzfeed",
         component: () => import("./views/SportsPage.vue")
     },
 ]

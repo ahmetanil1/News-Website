@@ -16,7 +16,7 @@ const articles = ref([]); // API'den çekilen veriyi saklamak için
 const fetchItems = async () => {
     try {
 
-        const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=tr&category=science&apiKey=${apiKey}`);
+        const response = await axios.get(`https://newsapi.org/v2/top-headlines?sources=australian-financial-review&apiKey=${apiKey}`);
 
         articles.value = response?.data?.articles; // Veriyi state'e ata
     } catch (error) {

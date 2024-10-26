@@ -15,15 +15,16 @@ const articles = ref([]); // API'den çekilen veriyi saklamak için
 
 const fetchItems = async () => {
     try {
-        const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=tr&category=entertainment&apiKey=${apiKey}`);
-        articles.value = response?.data?.articles; // Veriyi state'e ata
+        console.log('Fetching entertainment news...');
+        const response = await axios.get(`https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${apiKey}`);
+        console.log('Response:', response.data.articles);
+        articles.value = response.data.articles;
     } catch (error) {
-        console.error("Error fetching items:", error);
+        console.error('Error fetching items:', error.message);
     }
 };
 
 onMounted(() => {
     fetchItems();
-})
-
+});
 </script>
