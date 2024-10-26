@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h1>Sports News</h1>
         <NewsCard v-for="article in articles" :key="article.id" :article="article" />
     </div>
 </template>
