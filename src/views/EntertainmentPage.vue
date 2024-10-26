@@ -17,7 +17,6 @@ const fetchItems = async () => {
     try {
         console.log('Fetching entertainment news...');
         const response = await axios.get(`https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${apiKey}`);
-        console.log('Response:', response.data.articles);
         articles.value = response.data.articles;
     } catch (error) {
         console.error('Error fetching items:', error.message);
