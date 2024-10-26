@@ -9,7 +9,7 @@
 import { ref, computed, onMounted } from 'vue';
 import axios from 'axios';
 const apiKey = import.meta.env.VITE_API_KEY;
-import NewsCard from '../components/NewsCard.vue';
+import NewsCard from '../components/newsCard.vue';
 
 const articles = ref([]); // API'den çekilen veriyi saklamak için
 

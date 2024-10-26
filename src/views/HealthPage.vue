@@ -8,7 +8,7 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue';
 import axios from 'axios';
-import NewsCard from '../components/NewsCard.vue';
+import NewsCard from '../components/newsCard.vue';
 const apiKey = import.meta.env.VITE_API_KEY;
 
 const articles = ref([]); // API'den çekilen veriyi saklamak için
